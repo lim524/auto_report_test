@@ -18,7 +18,7 @@ const templates = {
 };
 
 // 난이도 (임의 설정, 필요시 입력값으로 변경 가능)
-const difficulty = "중상"; 
+const difficulty = "중상";
 
 // DOM 요소 가져오기
 const generateBtn = document.getElementById('generateBtn');
@@ -85,10 +85,10 @@ function copyToClipboard() {
         alert('생성된 보고서가 없습니다.');
         return;
     }
-    
+
     resultArea.select();
     document.execCommand('copy'); // 구형 브라우저 호환성 고려
-    
+
     // Clipboard API 사용 시도 (최신 브라우저)
     if (navigator.clipboard) {
         navigator.clipboard.writeText(resultArea.value)
