@@ -84,7 +84,7 @@ h2 {
 .form-group {
     display: flex;
     flex-direction: column;
-    gap: 0.5rem;
+    gap: 2.5rem;
 }
 
 .form-group label {
