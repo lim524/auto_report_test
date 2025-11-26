@@ -39,7 +39,7 @@ body {
     padding: 2rem;
     display: flex;
     flex-direction: column;
-    gap: 2.5rem;
+    gap: 2rem;
 }
 
 header {
@@ -72,7 +72,7 @@ h2 {
 .input-section form {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 2.5rem;
+    gap: 1.25rem;
 }
 
 @media (max-width: 640px) {
@@ -84,7 +84,7 @@ h2 {
 .form-group {
     display: flex;
     flex-direction: column;
-    gap: 2.5rem;
+    gap: 0.5rem;
 }
 
 .form-group label {
@@ -133,7 +133,7 @@ h2 {
 .output-section {
     display: flex;
     flex-direction: column;
-    gap: 2.5rem;
+    gap: 1rem;
 }
 
 .textarea-wrapper {
@@ -177,4 +177,10 @@ textarea:focus {
 
 .secondary-btn:active {
     transform: translateY(1px);
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
 }
