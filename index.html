@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EOM Class - 학생 평가 보고서 생성기</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>학생 평가 보고서 생성기</h1>
+            <p>입력값을 바탕으로 랜덤 템플릿을 조합하여 보고서를 생성합니다.</p>
+        </header>
+
+        <main>
+            <section class="input-section">
+                <h2>입력 정보</h2>
+                <form id="reportForm">
+                    <div class="form-group">
+                        <label for="name">이름</label>
+                        <input type="text" id="name" placeholder="예) 홍길동" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="grade">학년/과정</label>
+                        <input type="text" id="grade" placeholder="예) 중2-1" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="unit">단원명</label>
+                        <input type="text" id="unit" placeholder="예) 일차함수" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="keyType">핵심 출제 유형 / 오답 유형</label>
+                        <input type="text" id="keyType" placeholder="예) 그래프의 평행이동" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="goal">지도 목표</label>
+                        <input type="text" id="goal" placeholder="예) 다양한 접근 방식" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="unitCore">단원 핵심 내용</label>
+                        <input type="text" id="unitCore" placeholder="예) 기초 개념의 정확한 이해" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="errorCause">오류 원인</label>
+                        <input type="text" id="errorCause" placeholder="예) 개념의 혼동" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="actionPlan">구체적 실행 계획</label>
+                        <input type="text" id="actionPlan" placeholder="예) 심화 유형 학습" required>
+                    </div>
+                    
+                    <button type="button" id="generateBtn" class="primary-btn">보고서 생성하기</button>
+                </form>
+            </section>
+
+            <section class="output-section">
+                <h2>생성 결과</h2>
+                <div class="textarea-wrapper">
+                    <textarea id="resultArea" readonly placeholder="생성 버튼을 누르면 결과가 여기에 표시됩니다."></textarea>
+                </div>
+                <button type="button" id="copyBtn" class="secondary-btn">전체 복사</button>
+            </section>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
